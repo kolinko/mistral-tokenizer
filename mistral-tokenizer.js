@@ -311,7 +311,6 @@ const encode = (prompt, add_bos_token=true, add_preceding_space=true, log_perfor
         // Consider adding to merge queue: prev--resultOfMerge
         if (resultOfMerge.prev) {
             resultOfMerge.prev.next = resultOfMerge
-            resultOfMerge.prev
             addToMergeQueue(resultOfMerge.prev)
         } else {
             // If prev does not exist then this is the new firstNode
